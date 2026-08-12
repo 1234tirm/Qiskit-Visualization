@@ -1,0 +1,9 @@
+from qiskit.visualization import visualize_transition
+from qiskit import QuantumCircuit
+import matplotlib.pyplot as plt
+
+qc = QuantumCircuit(1)
+qc.h(0)
+qc.h(0)
+visualize_transition(qc, trace=True)
+
